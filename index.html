@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Buy Edge Ledger — Phihelix</title>
+  <script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
+</head>
+<body style="font-family:sans-serif;max-width:420px;margin:48px auto;padding:0 16px;">
+  <h1>Edge Ledger</h1>
+  <p>$99 USD · one-time · Notion template</p>
+  <button type="button" onclick="buy()" style="padding:12px 20px;font-size:16px;cursor:pointer;">
+    Pay with Paddle
+  </button>
+  <p><a href="https://philelix.notion.site">Back to Phihelix</a></p>
+  <script>
+    Paddle.Initialize({ token: "live_12278820dc563e594b617b1e55c" });
+    function buy() {
+      Paddle.Checkout.open({
+        items: [{ priceId: "pri_01m25retw5ctadrsg8j0n5pwbn", quantity: 1 }]
+      });
+    }
+  </script>
+</body>
+</html>
