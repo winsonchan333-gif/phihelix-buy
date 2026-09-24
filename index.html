@@ -20,7 +20,9 @@
       background: #fff; border-radius: 16px;
       padding: 32px 28px 24px;
       box-shadow: 0 12px 40px rgba(15, 23, 42, .08);
+      text-align: center;
     }
+    .logo { width: 56px; height: 56px; border-radius: 12px; margin: 0 0 12px; object-fit: cover; }
     .brand { font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: var(--teal); margin: 0 0 8px; }
     h1 { margin: 0 0 8px; font-size: 28px; }
     .price { margin: 0 0 24px; color: #475569; }
@@ -30,14 +32,14 @@
       color: #fff; background: var(--teal); cursor: pointer;
     }
     button:hover { background: var(--mint); }
-    .links { margin: 20px 0 0; font-size: 13px; text-align: center; }
+    .links { margin: 20px 0 0; font-size: 13px; }
     .links a { color: var(--teal); text-decoration: none; }
-    .fine { margin: 16px 0 0; font-size: 12px; color: #64748B; text-align: center; line-height: 1.5; }
+    .fine { margin: 16px 0 0; font-size: 12px; color: #64748B; line-height: 1.5; }
   </style>
 </head>
 <body>
   <div class="card">
-        <img src="logo.png" alt="Phihelix" width="56" height="56" style="border-radius:12px;margin-bottom:12px;">
+    <img class="logo" src="logo.png" alt="Phihelix">
     <p class="brand">Phihelix</p>
     <h1>Edge Ledger</h1>
     <p class="price">$99 USD · one-time · Notion template</p>
